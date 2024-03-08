@@ -1,7 +1,8 @@
 import React from 'react';
 
 export const onPress = (params) => {
-  alert("on Press from plugin!");
+  const d = new Date();
+  alert(`${d.toLocaleTimeString()}`);
   console.log("on press pressed", {params});
 }
 
@@ -16,7 +17,7 @@ const App = (props) => {
         color: 'white',
       }}
     >
-      <div>hello from webdeck-plugin-template</div>
+      <div>hello from webdeck-time</div>
     </div>
   )
 };
