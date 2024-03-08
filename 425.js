@@ -1,4 +1,4 @@
-(self['webpackChunkwebdeck_plugin_template'] = self['webpackChunkwebdeck_plugin_template'] || []).push([["425"], {
+(self['webpackChunkwebdeck_time'] = self['webpackChunkwebdeck_time'] || []).push([["425"], {
 "251": (function (__unused_webpack_module, exports, __webpack_require__) {
 /**
  * @license React
@@ -53,7 +53,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 
  var onPress = function(params) {
-    alert("on Press from plugin!");
+    var d = new Date();
+    alert("".concat(d.toLocaleTimeString()));
     console.log("on press pressed", {
         params: params
     });
@@ -70,7 +71,7 @@ var App = function(props) {
             color: "white"
         },
         children: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-            children: "hello from webdeck-plugin-template"
+            children: "hello from webdeck-time"
         })
     });
 };
