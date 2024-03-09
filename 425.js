@@ -121,7 +121,7 @@ function _define_property(obj, key, value) {
 
  var manifest = {
     icons: _define_property({}, _utils_icons__WEBPACK_IMPORTED_MODULE_0__.Icons.DEFAULT, {
-        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_0__["default"]["default"]
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_0__.PATHS["default"]
     })
 };
 }),
@@ -130,12 +130,12 @@ function _define_property(obj, key, value) {
 __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   Icons: function() { return Icons; },
-  "default": function() { return __WEBPACK_DEFAULT_EXPORT__; }
+  PATHS: function() { return PATHS; }
 });
  var Icons = {
     DEFAULT: "default"
 };
-var __WEBPACK_DEFAULT_EXPORT__ = {
+ var PATHS = {
     default: "M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
 };
 }),
