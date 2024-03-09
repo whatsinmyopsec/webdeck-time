@@ -44,22 +44,25 @@ module.exports = __webpack_require__(/*! ./cjs/react-jsx-runtime.production.min.
 __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return __WEBPACK_DEFAULT_EXPORT__; },
+  manifest: function() { return _manifest__WEBPACK_IMPORTED_MODULE_2__.manifest; },
   onPress: function() { return onPress; }
 });
 /* harmony import */var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */"893");
 /* harmony import */var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */"710");
 /* harmony import */var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */var _manifest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./manifest */"530");
 
 
- var onPress = function(params) {
+
+ var onPress = function(/** @type {any} */ params) {
     var d = new Date();
     alert("".concat(d.toLocaleTimeString()));
     console.log("on press pressed", {
         params: params
     });
 };
-var App = function(props) {
+var App = function(/** @type {any} */ props) {
     console.log("App render", {
         props: props
     });
@@ -97,6 +100,44 @@ react_dom__WEBPACK_IMPORTED_MODULE_3___default().render(/*#__PURE__*/ (0, react_
     config: {},
     setConfig: function() {}
 }), document.getElementById("root"));
+}),
+"530": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+__webpack_require__.d(__webpack_exports__, {
+  manifest: function() { return manifest; }
+});
+/* harmony import */var _utils_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/icons */"4");
+function _define_property(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+
+ var manifest = {
+    icons: _define_property({}, _utils_icons__WEBPACK_IMPORTED_MODULE_0__.Icons.DEFAULT, {
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_0__["default"]["default"]
+    })
+};
+}),
+"4": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+__webpack_require__.d(__webpack_exports__, {
+  Icons: function() { return Icons; },
+  "default": function() { return __WEBPACK_DEFAULT_EXPORT__; }
+});
+ var Icons = {
+    DEFAULT: "default"
+};
+var __WEBPACK_DEFAULT_EXPORT__ = {
+    default: "M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+};
 }),
 
 }]);
